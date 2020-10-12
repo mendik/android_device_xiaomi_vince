@@ -24,8 +24,15 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit some common havoc stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-# PixelExperience Stuffs
+# Build type
+DERP_BUILD_ZIP_TYPE := VANILLA
+
+# DerpFast Stuffs
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Device maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.derp.maintainer=Gustavo Mends	
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
