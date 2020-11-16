@@ -26,7 +26,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # PixelExperience Stuffs
 TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
@@ -43,4 +43,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys"
