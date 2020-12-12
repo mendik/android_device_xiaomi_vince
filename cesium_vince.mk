@@ -22,18 +22,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common havoc stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/cesium/config/common_full_phone.mk)
 
-# PixelExperience Stuffs
-TARGET_GAPPS_ARCH := arm64
+# Stuffs
 TARGET_BOOT_ANIMATION_RES := 1440
-
-# RR Wallpapers
-BUILD_RR_WALLPAPERS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+IS_PHONE := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := rr_vince
+PRODUCT_NAME := cesium_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi

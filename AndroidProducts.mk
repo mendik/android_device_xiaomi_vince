@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_vince.mk
+    $(LOCAL_DIR)/cesium_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    rr_vince-user \
-    rr_vince-userdebug \
-    rr_vince-eng
+    cesium_vince-user \
+    cesium_vince-userdebug \
+    cesium_vince-eng
