@@ -239,3 +239,7 @@ persist.sys.wfd.virtual=0
 # Enable QC2 bufferqueue block-pool
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.qc2.use.bqpool=1
+
+# havocOS maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.havoc.maintainer=Gustavo Mends
