@@ -24,15 +24,11 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 # Inherit some common havoc stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-# Build type
-DERP_BUILD_ZIP_TYPE := VANILLA
-
 # DerpFast Stuffs
 TARGET_BOOT_ANIMATION_RES := 1440
-
-# Device maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.derp.maintainer=Gustavo Mends	
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
@@ -49,4 +45,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/coral/coral:11/RQ1A.201205.008/6943376:user/release-keys"
+BUILD_FINGERPRINT := "xiaomi/vince/vince:8.1.0/OPM1.171019.019/V10.2.1.0.OEGMIXM:user/release-keys"
