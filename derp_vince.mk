@@ -28,7 +28,7 @@ $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 DERP_BUILD_ZIP_TYPE := VANILLA
 
 # DerpFast Stuffs
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Device maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
