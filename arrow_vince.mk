@@ -25,11 +25,14 @@ $(call inherit-product, device/xiaomi/vince/device.mk)
 $(call inherit-product, vendor/arrow/config/common_full_phone.mk)
 
 # Arrow Stuffs
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-WITH_GAPPS := true
+
 TARGET_BOOT_ANIMATION_RES := 1440
 DEVICE_MAINTAINER := Gustavo Mends
+
+# Gapps
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+GAPPS_VARIANT := mini
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
